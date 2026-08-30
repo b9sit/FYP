@@ -1,0 +1,13 @@
+# Python
+backend/venv/
+__pycache__/
+*.py[cod]
+
+# Environment variables
+backend/.env
+
+# Node
+frontend/node_modules/
+
+# Django
+backend/db.sqlite3
