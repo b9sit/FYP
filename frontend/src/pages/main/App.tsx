@@ -10,6 +10,7 @@ import Register from "../Register/Register";
 import NotFound from "../NotFound/NotFound";
 import ProtectedRoute from "../../components/ProtectedRoute";
 import Home from "../Home/Home";
+import JoinOrg from "../JoinOrg/JoinOrg";
 
 // function Logout() {
 //   localStorage.clear();
@@ -35,6 +36,7 @@ function App() {
         />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<RegisterAndLogout />} />
+        <Route path="/join/:token" element={<JoinOrg />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
